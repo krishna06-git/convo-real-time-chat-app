@@ -3,8 +3,7 @@ services:
     name: convo-app
     runtime: node
     region: oregon
-    rootDir: server
-    buildCommand: npm install
+    buildCommand: npm run install:all && npm run build
     startCommand: npm start
     envVars:
       - key: NODE_ENV
