@@ -1,0 +1,39 @@
+# ============================================
+#  Convo — .gitignore
+# ============================================
+
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment variables — NEVER commit these
+.env
+server/.env
+client/.env
+*.env.local
+
+# Build output
+client/dist/
+client/build/
+
+# Uploads (stored on Cloudinary in production)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# MongoDB in-memory server cache
+.cache/
